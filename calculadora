@@ -1,0 +1,47 @@
+def soma(numero1, numero2):
+    return numero1 + numero2
+
+def sub(numero1, numero2):
+    return numero1 - numero2
+
+def mul(numero1, numero2):
+    return numero1 * numero2
+
+def div(numero1, numero2):
+    if numero2 != 0:
+        return numero1 / numero2
+    else:
+        return "Erro: Divisão por zero"
+
+while True:
+  print('Digite o primeiro número:')
+  numero1 = int(input())
+  print('Digite o segundo número:')
+  numero2 = int(input())
+  print('Escolha uma operação:')
+  print("Opções: soma, sub, mul, div")
+  operacao = input()
+
+  if operacao == 'soma':
+    res = soma(numero1, numero2)
+    print(f'Resultado: {res}')
+  elif operacao == 'sub':
+    res = sub(numero1, numero2)
+    print(f'Resultado: {res}')
+  elif operacao == 'mul':
+    res = mul(numero1, numero2)
+    print(f'Resultado: {res}')
+  elif operacao == 'div':
+    res = div(numero1, numero2)
+    print(f'Resultado: {res}')
+  else:
+    print("Operação inválida")
+  print('\n')
+  print('Deseja conitnuar? Digite sim ou nao')
+  choose = input().lower()
+  if choose ==  'sim':  # organizar essa linha ainda para que os inputs anteriores e operacoes retornem 
+    print()
+  if choose == 'nao':
+    print("PROGRAMA ENCERRADO")
+  break
+    
