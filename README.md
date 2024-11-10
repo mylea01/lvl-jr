@@ -1,3 +1,3 @@
 # Projects for starters
-#simulação simples de um dado de 6 faces
-#calculadora simples
+#simple simulation of a 6-sided 
+#simple calculator
